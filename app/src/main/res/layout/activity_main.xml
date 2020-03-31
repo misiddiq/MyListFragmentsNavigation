@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:name="com.example.mylistfragmentsnavigation.FragmentList"
+        android:id="@+id/fragment"
+        />
+
+    <!-- Container for Fragment-->
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/fragment"
+        android:id="@+id/fragment_container"
+        />
+</RelativeLayout>
